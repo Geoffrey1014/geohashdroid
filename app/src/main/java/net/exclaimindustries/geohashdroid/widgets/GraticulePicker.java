@@ -17,6 +17,7 @@ import androidx.core.content.ContextCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -144,6 +145,7 @@ public class GraticulePicker extends RelativeLayout {
             if(isChecked) {
                 // If it's checked, mLat and mLon go disabled, as you can't
                 // set a specific graticule.
+                Log.i("Themis", "GraticulePicker: step 2: click grat_globalhash");
                 mLat.setEnabled(false);
                 mLon.setEnabled(false);
             } else {

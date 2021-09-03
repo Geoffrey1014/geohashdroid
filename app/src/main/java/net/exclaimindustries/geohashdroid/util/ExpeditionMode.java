@@ -350,6 +350,7 @@ public class ExpeditionMode
         switch(item.getItemId()) {
             case R.id.action_selectagraticule: {
                 // It's Select-A-Graticule Mode!  At long last!
+                Log.i("Themis", "onOptionsItemSelected: step 1: click action_selectagraticule");
                 mCentralMap.enterSelectAGraticuleMode();
                 return true;
             }

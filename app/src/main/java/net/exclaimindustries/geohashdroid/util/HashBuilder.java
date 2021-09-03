@@ -145,7 +145,13 @@ public class HashBuilder {
          * </p>
          */
         public void runStock() {
-            Log.d(DEBUG_TAG, "Now starting a StockRunner for " + DateTools.getHyphenatedDateString(mCal) + " at " + mGrat.getLatitudeString(false) + " " + mGrat.getLongitudeString(false) + "...");
+            try{
+                Log.d(DEBUG_TAG, "Now starting a StockRunner for " + DateTools.getHyphenatedDateString(mCal) + " at " + mGrat.getLatitudeString(false) + " " + mGrat.getLongitudeString(false) + "...");
+
+            }catch(RuntimeException e){
+                Log.i("Themis", "runStock: step last ");
+                throw e;
+            }
             Info toReturn;
             String stock;
             
