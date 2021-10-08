@@ -145,7 +145,7 @@ public class GraticulePicker extends RelativeLayout {
             if(isChecked) {
                 // If it's checked, mLat and mLon go disabled, as you can't
                 // set a specific graticule.
-                Log.i("Themis", "GraticulePicker: step 2: click grat_globalhash");
+                Log.i("Themis", "Event: Checked \"Globalhash!\" box.");
                 mLat.setEnabled(false);
                 mLon.setEnabled(false);
             } else {

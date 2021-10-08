@@ -149,7 +149,7 @@ public class HashBuilder {
                 Log.d(DEBUG_TAG, "Now starting a StockRunner for " + DateTools.getHyphenatedDateString(mCal) + " at " + mGrat.getLatitudeString(false) + " " + mGrat.getLongitudeString(false) + "...");
 
             }catch(RuntimeException e){
-                Log.i("Themis", "runStock: step last ");
+                Log.i("Themis", "Crash!: RuntimeException");
                 throw e;
             }
             Info toReturn;
